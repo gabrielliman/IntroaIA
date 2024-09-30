@@ -1,0 +1,22 @@
+#Variáveis para utilizar no modelo
+var_to_keep = ['ClimbRate', 'Sgz', 'P', 'Q', 'CurPitch', 'CurRoll', 'AbsRoll', 'DiffClb', 'DiffRollRate', 'DiffDiffClb', 
+           'DiffSeTime1', 'DiffSeTime3', 'DiffSeTime5', 'DiffSeTime7', 'DiffSeTime9', 'DiffSeTime11', 'DiffSeTime13', 'Alpha', 'Se', 'Goal']
+
+#XGBoost Hiperparametros
+#Os parâmetros estão na ordem: n_estimators, max_depth, learning_rate
+params = [[50, 4, 0.2],
+          [50, 10, 1],
+          [50, 10, 0.2],
+          [50, 10, 0.04],
+          [200, 4, 1],
+          [200, 4, 0.2],
+          [200, 4, 0.04],
+          [200, 10, 0.2],]
+
+#Discretização
+classes = {0.0: (-inf, -0.0025),
+           1.0: (-0.0025, -0.0020),
+           2.0: (-0.0020, -0.0015),
+           3.0: (-0.0015, -0.0010),
+           4.0: (-0.0010, -0.0005),
+           5.0: (-0.0005, inf)}

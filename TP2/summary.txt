@@ -1,0 +1,28 @@
+###  DESCRIÇÃO DAS VARIÁVEIS DO DATASET AILERONS  ###
+
+Variáveis de dinâmica de Voo:
+ClimbRate: Taxa de subida ou descida;
+Sgz: Força específica ao longo do eixo Z;
+P: Taxa de rotação - velocidade angular sobre o eixo longitudinal;
+Q: Taxa de arfagem - velocidade angular sobre o eixo lateral;
+CurPitch: Ângulo de arfagem atual;
+CurRoll: Ângulo de rotação atual;
+AbsRoll: Ângulo de rotação absoluto;
+DiffClb: Diferença na taxa de subida;
+DiffRollRate: Diferença na taxa de rotação;
+DiffDiffClb: Segunda diferença na taxa de subida;
+
+Tempo Sequencial:
+SeTime1, SeTime2, ..., SeTime14: Tempo sequencial de comandos da deflexão da superfície de controle;
+DiffSeTime1, DiffSeTime2, ..., DiffSeTime14: Diferenças nas características de tempo sequencial.
+
+Variáveis Aerodinâmicas e de Controle:
+Alpha: Ângulo de ataque.
+Se: Deflexão da superfície de controle 
+Goal: Variável alvo da regressão - deflexão do aileron
+
+
+
+
+
+
